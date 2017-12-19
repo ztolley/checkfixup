@@ -1,0 +1,331 @@
+{
+  "url": "https://api.github.com/repos/ztolley/checkfixup/compare/master...heroku",
+  "html_url": "https://github.com/ztolley/checkfixup/compare/master...heroku",
+  "permalink_url": "https://github.com/ztolley/checkfixup/compare/ztolley:3c7a1b7...ztolley:98bf9e4",
+  "diff_url": "https://github.com/ztolley/checkfixup/compare/master...heroku.diff",
+  "patch_url": "https://github.com/ztolley/checkfixup/compare/master...heroku.patch",
+  "base_commit": {
+      "sha": "3c7a1b7f6307c0fff43cef67892e190628f62d24",
+      "commit": {
+          "author": {
+              "name": "Zac Tolley",
+              "email": "zac@thetolleys.com",
+              "date": "2017-12-05T21:38:19Z"
+          },
+          "committer": {
+              "name": "Zac Tolley",
+              "email": "zac@thetolleys.com",
+              "date": "2017-12-05T21:38:19Z"
+          },
+          "message": "Fix image on login page.",
+          "tree": {
+              "sha": "e71aee7199f631625bd8c3554c153ff76c39951e",
+              "url": "https://api.github.com/repos/ztolley/checkfixup/git/trees/e71aee7199f631625bd8c3554c153ff76c39951e"
+          },
+          "url": "https://api.github.com/repos/ztolley/checkfixup/git/commits/3c7a1b7f6307c0fff43cef67892e190628f62d24",
+          "comment_count": 0,
+          "verification": {
+              "verified": false,
+              "reason": "unsigned",
+              "signature": null,
+              "payload": null
+          }
+      },
+      "url": "https://api.github.com/repos/ztolley/checkfixup/commits/3c7a1b7f6307c0fff43cef67892e190628f62d24",
+      "html_url": "https://github.com/ztolley/checkfixup/commit/3c7a1b7f6307c0fff43cef67892e190628f62d24",
+      "comments_url": "https://api.github.com/repos/ztolley/checkfixup/commits/3c7a1b7f6307c0fff43cef67892e190628f62d24/comments",
+      "author": {
+          "login": "ztolley",
+          "id": 56056,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/56056?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ztolley",
+          "html_url": "https://github.com/ztolley",
+          "followers_url": "https://api.github.com/users/ztolley/followers",
+          "following_url": "https://api.github.com/users/ztolley/following{/other_user}",
+          "gists_url": "https://api.github.com/users/ztolley/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/ztolley/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/ztolley/subscriptions",
+          "organizations_url": "https://api.github.com/users/ztolley/orgs",
+          "repos_url": "https://api.github.com/users/ztolley/repos",
+          "events_url": "https://api.github.com/users/ztolley/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/ztolley/received_events",
+          "type": "User",
+          "site_admin": false
+      },
+      "committer": {
+          "login": "ztolley",
+          "id": 56056,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/56056?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ztolley",
+          "html_url": "https://github.com/ztolley",
+          "followers_url": "https://api.github.com/users/ztolley/followers",
+          "following_url": "https://api.github.com/users/ztolley/following{/other_user}",
+          "gists_url": "https://api.github.com/users/ztolley/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/ztolley/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/ztolley/subscriptions",
+          "organizations_url": "https://api.github.com/users/ztolley/orgs",
+          "repos_url": "https://api.github.com/users/ztolley/repos",
+          "events_url": "https://api.github.com/users/ztolley/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/ztolley/received_events",
+          "type": "User",
+          "site_admin": false
+      },
+      "parents": [
+          {
+              "sha": "04648bb0dd35819b21f17dba5c47819a4f99dceb",
+              "url": "https://api.github.com/repos/ztolley/checkfixup/commits/04648bb0dd35819b21f17dba5c47819a4f99dceb",
+              "html_url": "https://github.com/ztolley/checkfixup/commit/04648bb0dd35819b21f17dba5c47819a4f99dceb"
+          }
+      ]
+  },
+  "merge_base_commit": {
+      "sha": "3c7a1b7f6307c0fff43cef67892e190628f62d24",
+      "commit": {
+          "author": {
+              "name": "Zac Tolley",
+              "email": "zac@thetolleys.com",
+              "date": "2017-12-05T21:38:19Z"
+          },
+          "committer": {
+              "name": "Zac Tolley",
+              "email": "zac@thetolleys.com",
+              "date": "2017-12-05T21:38:19Z"
+          },
+          "message": "Fix image on login page.",
+          "tree": {
+              "sha": "e71aee7199f631625bd8c3554c153ff76c39951e",
+              "url": "https://api.github.com/repos/ztolley/checkfixup/git/trees/e71aee7199f631625bd8c3554c153ff76c39951e"
+          },
+          "url": "https://api.github.com/repos/ztolley/checkfixup/git/commits/3c7a1b7f6307c0fff43cef67892e190628f62d24",
+          "comment_count": 0,
+          "verification": {
+              "verified": false,
+              "reason": "unsigned",
+              "signature": null,
+              "payload": null
+          }
+      },
+      "url": "https://api.github.com/repos/ztolley/checkfixup/commits/3c7a1b7f6307c0fff43cef67892e190628f62d24",
+      "html_url": "https://github.com/ztolley/checkfixup/commit/3c7a1b7f6307c0fff43cef67892e190628f62d24",
+      "comments_url": "https://api.github.com/repos/ztolley/checkfixup/commits/3c7a1b7f6307c0fff43cef67892e190628f62d24/comments",
+      "author": {
+          "login": "ztolley",
+          "id": 56056,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/56056?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ztolley",
+          "html_url": "https://github.com/ztolley",
+          "followers_url": "https://api.github.com/users/ztolley/followers",
+          "following_url": "https://api.github.com/users/ztolley/following{/other_user}",
+          "gists_url": "https://api.github.com/users/ztolley/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/ztolley/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/ztolley/subscriptions",
+          "organizations_url": "https://api.github.com/users/ztolley/orgs",
+          "repos_url": "https://api.github.com/users/ztolley/repos",
+          "events_url": "https://api.github.com/users/ztolley/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/ztolley/received_events",
+          "type": "User",
+          "site_admin": false
+      },
+      "committer": {
+          "login": "ztolley",
+          "id": 56056,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/56056?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ztolley",
+          "html_url": "https://github.com/ztolley",
+          "followers_url": "https://api.github.com/users/ztolley/followers",
+          "following_url": "https://api.github.com/users/ztolley/following{/other_user}",
+          "gists_url": "https://api.github.com/users/ztolley/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/ztolley/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/ztolley/subscriptions",
+          "organizations_url": "https://api.github.com/users/ztolley/orgs",
+          "repos_url": "https://api.github.com/users/ztolley/repos",
+          "events_url": "https://api.github.com/users/ztolley/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/ztolley/received_events",
+          "type": "User",
+          "site_admin": false
+      },
+      "parents": [
+          {
+              "sha": "04648bb0dd35819b21f17dba5c47819a4f99dceb",
+              "url": "https://api.github.com/repos/ztolley/checkfixup/commits/04648bb0dd35819b21f17dba5c47819a4f99dceb",
+              "html_url": "https://github.com/ztolley/checkfixup/commit/04648bb0dd35819b21f17dba5c47819a4f99dceb"
+          }
+      ]
+  },
+  "status": "ahead",
+  "ahead_by": 2,
+  "behind_by": 0,
+  "total_commits": 2,
+  "commits": [
+      {
+          "sha": "406e95da918854c0a8942eedb946bdde051cdf5d",
+          "commit": {
+              "author": {
+                  "name": "Zac Tolley",
+                  "email": "zac@thetolleys.com",
+                  "date": "2017-12-10T12:35:35Z"
+              },
+              "committer": {
+                  "name": "Zac Tolley",
+                  "email": "zac@thetolleys.com",
+                  "date": "2017-12-10T12:35:35Z"
+              },
+              "message": "Fix",
+              "tree": {
+                  "sha": "76014f6e30f4d289bb5425650502b4872fe34787",
+                  "url": "https://api.github.com/repos/ztolley/checkfixup/git/trees/76014f6e30f4d289bb5425650502b4872fe34787"
+              },
+              "url": "https://api.github.com/repos/ztolley/checkfixup/git/commits/406e95da918854c0a8942eedb946bdde051cdf5d",
+              "comment_count": 0,
+              "verification": {
+                  "verified": false,
+                  "reason": "unsigned",
+                  "signature": null,
+                  "payload": null
+              }
+          },
+          "url": "https://api.github.com/repos/ztolley/checkfixup/commits/406e95da918854c0a8942eedb946bdde051cdf5d",
+          "html_url": "https://github.com/ztolley/checkfixup/commit/406e95da918854c0a8942eedb946bdde051cdf5d",
+          "comments_url": "https://api.github.com/repos/ztolley/checkfixup/commits/406e95da918854c0a8942eedb946bdde051cdf5d/comments",
+          "author": {
+              "login": "ztolley",
+              "id": 56056,
+              "avatar_url": "https://avatars1.githubusercontent.com/u/56056?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/ztolley",
+              "html_url": "https://github.com/ztolley",
+              "followers_url": "https://api.github.com/users/ztolley/followers",
+              "following_url": "https://api.github.com/users/ztolley/following{/other_user}",
+              "gists_url": "https://api.github.com/users/ztolley/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/ztolley/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/ztolley/subscriptions",
+              "organizations_url": "https://api.github.com/users/ztolley/orgs",
+              "repos_url": "https://api.github.com/users/ztolley/repos",
+              "events_url": "https://api.github.com/users/ztolley/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/ztolley/received_events",
+              "type": "User",
+              "site_admin": false
+          },
+          "committer": {
+              "login": "ztolley",
+              "id": 56056,
+              "avatar_url": "https://avatars1.githubusercontent.com/u/56056?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/ztolley",
+              "html_url": "https://github.com/ztolley",
+              "followers_url": "https://api.github.com/users/ztolley/followers",
+              "following_url": "https://api.github.com/users/ztolley/following{/other_user}",
+              "gists_url": "https://api.github.com/users/ztolley/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/ztolley/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/ztolley/subscriptions",
+              "organizations_url": "https://api.github.com/users/ztolley/orgs",
+              "repos_url": "https://api.github.com/users/ztolley/repos",
+              "events_url": "https://api.github.com/users/ztolley/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/ztolley/received_events",
+              "type": "User",
+              "site_admin": false
+          },
+          "parents": [
+              {
+                  "sha": "3c7a1b7f6307c0fff43cef67892e190628f62d24",
+                  "url": "https://api.github.com/repos/ztolley/checkfixup/commits/3c7a1b7f6307c0fff43cef67892e190628f62d24",
+                  "html_url": "https://github.com/ztolley/checkfixup/commit/3c7a1b7f6307c0fff43cef67892e190628f62d24"
+              }
+          ]
+      },
+      {
+          "sha": "98bf9e41a25231691585f9319dba5fcb6cce05bd",
+          "commit": {
+              "author": {
+                  "name": "Zac Tolley",
+                  "email": "zac@thetolleys.com",
+                  "date": "2017-12-10T12:36:09Z"
+              },
+              "committer": {
+                  "name": "Zac Tolley",
+                  "email": "zac@thetolleys.com",
+                  "date": "2017-12-10T12:36:09Z"
+              },
+              "message": "fixup! Fix",
+              "tree": {
+                  "sha": "ec2103391b2623e54a4e3549abef3ea21ad23adc",
+                  "url": "https://api.github.com/repos/ztolley/checkfixup/git/trees/ec2103391b2623e54a4e3549abef3ea21ad23adc"
+              },
+              "url": "https://api.github.com/repos/ztolley/checkfixup/git/commits/98bf9e41a25231691585f9319dba5fcb6cce05bd",
+              "comment_count": 0,
+              "verification": {
+                  "verified": false,
+                  "reason": "unsigned",
+                  "signature": null,
+                  "payload": null
+              }
+          },
+          "url": "https://api.github.com/repos/ztolley/checkfixup/commits/98bf9e41a25231691585f9319dba5fcb6cce05bd",
+          "html_url": "https://github.com/ztolley/checkfixup/commit/98bf9e41a25231691585f9319dba5fcb6cce05bd",
+          "comments_url": "https://api.github.com/repos/ztolley/checkfixup/commits/98bf9e41a25231691585f9319dba5fcb6cce05bd/comments",
+          "author": {
+              "login": "ztolley",
+              "id": 56056,
+              "avatar_url": "https://avatars1.githubusercontent.com/u/56056?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/ztolley",
+              "html_url": "https://github.com/ztolley",
+              "followers_url": "https://api.github.com/users/ztolley/followers",
+              "following_url": "https://api.github.com/users/ztolley/following{/other_user}",
+              "gists_url": "https://api.github.com/users/ztolley/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/ztolley/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/ztolley/subscriptions",
+              "organizations_url": "https://api.github.com/users/ztolley/orgs",
+              "repos_url": "https://api.github.com/users/ztolley/repos",
+              "events_url": "https://api.github.com/users/ztolley/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/ztolley/received_events",
+              "type": "User",
+              "site_admin": false
+          },
+          "committer": {
+              "login": "ztolley",
+              "id": 56056,
+              "avatar_url": "https://avatars1.githubusercontent.com/u/56056?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/ztolley",
+              "html_url": "https://github.com/ztolley",
+              "followers_url": "https://api.github.com/users/ztolley/followers",
+              "following_url": "https://api.github.com/users/ztolley/following{/other_user}",
+              "gists_url": "https://api.github.com/users/ztolley/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/ztolley/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/ztolley/subscriptions",
+              "organizations_url": "https://api.github.com/users/ztolley/orgs",
+              "repos_url": "https://api.github.com/users/ztolley/repos",
+              "events_url": "https://api.github.com/users/ztolley/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/ztolley/received_events",
+              "type": "User",
+              "site_admin": false
+          },
+          "parents": [
+              {
+                  "sha": "406e95da918854c0a8942eedb946bdde051cdf5d",
+                  "url": "https://api.github.com/repos/ztolley/checkfixup/commits/406e95da918854c0a8942eedb946bdde051cdf5d",
+                  "html_url": "https://github.com/ztolley/checkfixup/commit/406e95da918854c0a8942eedb946bdde051cdf5d"
+              }
+          ]
+      }
+  ],
+  "files": [
+      {
+          "sha": "401fbe161b41e8180a7ca03e46f3294d2fd1c98f",
+          "filename": "README.md",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0,
+          "changes": 2,
+          "blob_url": "https://github.com/ztolley/checkfixup/blob/98bf9e41a25231691585f9319dba5fcb6cce05bd/README.md",
+          "raw_url": "https://github.com/ztolley/checkfixup/raw/98bf9e41a25231691585f9319dba5fcb6cce05bd/README.md",
+          "contents_url": "https://api.github.com/repos/ztolley/checkfixup/contents/README.md?ref=98bf9e41a25231691585f9319dba5fcb6cce05bd",
+          "patch": "@@ -12,3 +12,5 @@ Requires Node JS, preferably 8.5 or above and 8.0 minimum.\n * Download or checkout the project\n * Run `npm install` \n * To run in dev mode use `npm run dev`\n+\n+Fixed"
+      }
+  ]
+}
