@@ -12,3 +12,4 @@ Requires Node JS, preferably 8.5 or above and 8.0 minimum.
 * Download or checkout the project
 * Run `npm install` 
 * To run in dev mode use `npm run dev`
+teest
