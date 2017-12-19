@@ -24,6 +24,7 @@ jobs:
           working_directory: ~/my-app
           environment:
             MOCHA_FILE: junit/test-results.xml
+            KEY: "1234"
           command: |
             mkdir junit
             npm run test:ci
