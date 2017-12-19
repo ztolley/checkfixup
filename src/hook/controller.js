@@ -38,7 +38,7 @@ async function postHook (req, res, next) {
       : assign({}, baseStatus, { state: 'success', description: 'No fixups found' })
     await createCommitStatus(status)
   } catch (error) {
-    return res.sendStatus(500)
+    return res.send(500, error.message)
   }
 
   res.sendStatus(200)

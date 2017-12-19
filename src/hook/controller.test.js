@@ -123,7 +123,7 @@ describe('webhook controller', () => {
       })
 
       it('should return an error', () => {
-        expect(this.resMock.sendStatus).to.be.calledWith(500)
+        expect(this.resMock.send).to.be.calledWith(500)
       })
     })
 
@@ -141,7 +141,7 @@ describe('webhook controller', () => {
       })
 
       it('should return an error', () => {
-        expect(this.resMock.sendStatus).to.be.calledWith(500)
+        expect(this.resMock.send).to.be.calledWith(500)
       })
     })
 
@@ -164,7 +164,7 @@ describe('webhook controller', () => {
       })
 
       it('should return an error', () => {
-        expect(this.resMock.sendStatus).to.be.calledWith(500)
+        expect(this.resMock.send).to.be.calledWith(500)
       })
     })
   })
