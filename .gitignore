@@ -1,0 +1,13 @@
+# dependencies
+/node_modules
+
+# misc
+.DS_Store
+.env
+coverage
+.nyc_output
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+test-results.xml
+*.pem

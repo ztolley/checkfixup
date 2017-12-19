@@ -1,0 +1,251 @@
+{
+  "ref": "refs/heads/master",
+  "before": "77fe9ad8f9d32f1a09edf826992fb8f5b8466556",
+  "after": "04648bb0dd35819b21f17dba5c47819a4f99dceb",
+  "created": false,
+  "deleted": false,
+  "forced": false,
+  "base_ref": null,
+  "compare": "https://github.com/ztolley/checkfixup/compare/77fe9ad8f9d3...04648bb0dd35",
+  "commits": [
+    {
+      "id": "bc00a20a874f04bec7aeb7934beb1912b7912442",
+      "tree_id": "3c3d3b44166f1232c24f0eee8a0b092e0a798987",
+      "distinct": false,
+      "message": "Add support for Heroku",
+      "timestamp": "2017-12-05T20:25:09Z",
+      "url": "https://github.com/ztolley/checkfixup/commit/bc00a20a874f04bec7aeb7934beb1912b7912442",
+      "author": {
+        "name": "Zac Tolley",
+        "email": "zac@thetolleys.com",
+        "username": "ztolley"
+      },
+      "committer": {
+        "name": "Zac Tolley",
+        "email": "zac@thetolleys.com",
+        "username": "ztolley"
+      },
+      "added": [
+        "Procfile"
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        "package.json"
+      ]
+    },
+    {
+      "id": "56c281e78e73dc74c7b21cf33ae7f656b6af3181",
+      "tree_id": "94dd756fc54617ed2ad075bee48315c3a29c60a9",
+      "distinct": false,
+      "message": "Update config to work better with Heroku",
+      "timestamp": "2017-12-05T21:08:00Z",
+      "url": "https://github.com/ztolley/checkfixup/commit/56c281e78e73dc74c7b21cf33ae7f656b6af3181",
+      "author": {
+        "name": "Zac Tolley",
+        "email": "zac@thetolleys.com",
+        "username": "ztolley"
+      },
+      "committer": {
+        "name": "Zac Tolley",
+        "email": "zac@thetolleys.com",
+        "username": "ztolley"
+      },
+      "added": [
+
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        "src/auth/middlewares/passportHandler.js",
+        "src/config.js",
+        "src/project/controllers/add.js"
+      ]
+    },
+    {
+      "id": "04648bb0dd35819b21f17dba5c47819a4f99dceb",
+      "tree_id": "94dd756fc54617ed2ad075bee48315c3a29c60a9",
+      "distinct": true,
+      "message": "Merge pull request #4 from ztolley/heroku\n\nHeroku",
+      "timestamp": "2017-12-05T21:30:36Z",
+      "url": "https://github.com/ztolley/checkfixup/commit/04648bb0dd35819b21f17dba5c47819a4f99dceb",
+      "author": {
+        "name": "Zac Tolley",
+        "email": "zac@thetolleys.com",
+        "username": "ztolley"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "username": "web-flow"
+      },
+      "added": [
+        "Procfile"
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        "package.json",
+        "src/auth/middlewares/passportHandler.js",
+        "src/config.js",
+        "src/project/controllers/add.js"
+      ]
+    }
+  ],
+  "head_commit": {
+    "id": "04648bb0dd35819b21f17dba5c47819a4f99dceb",
+    "tree_id": "94dd756fc54617ed2ad075bee48315c3a29c60a9",
+    "distinct": true,
+    "message": "Merge pull request #4 from ztolley/heroku\n\nHeroku",
+    "timestamp": "2017-12-05T21:30:36Z",
+    "url": "https://github.com/ztolley/checkfixup/commit/04648bb0dd35819b21f17dba5c47819a4f99dceb",
+    "author": {
+      "name": "Zac Tolley",
+      "email": "zac@thetolleys.com",
+      "username": "ztolley"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "username": "web-flow"
+    },
+    "added": [
+      "Procfile"
+    ],
+    "removed": [
+
+    ],
+    "modified": [
+      "package.json",
+      "src/auth/middlewares/passportHandler.js",
+      "src/config.js",
+      "src/project/controllers/add.js"
+    ]
+  },
+  "repository": {
+    "id": 113068425,
+    "name": "checkfixup",
+    "full_name": "ztolley/checkfixup",
+    "owner": {
+      "name": "ztolley",
+      "email": "zac@thetolleys.com",
+      "login": "ztolley",
+      "id": 56056,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/56056?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ztolley",
+      "html_url": "https://github.com/ztolley",
+      "followers_url": "https://api.github.com/users/ztolley/followers",
+      "following_url": "https://api.github.com/users/ztolley/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ztolley/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ztolley/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ztolley/subscriptions",
+      "organizations_url": "https://api.github.com/users/ztolley/orgs",
+      "repos_url": "https://api.github.com/users/ztolley/repos",
+      "events_url": "https://api.github.com/users/ztolley/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ztolley/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "private": false,
+    "html_url": "https://github.com/ztolley/checkfixup",
+    "description": null,
+    "fork": false,
+    "url": "https://github.com/ztolley/checkfixup",
+    "forks_url": "https://api.github.com/repos/ztolley/checkfixup/forks",
+    "keys_url": "https://api.github.com/repos/ztolley/checkfixup/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/repos/ztolley/checkfixup/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/repos/ztolley/checkfixup/teams",
+    "hooks_url": "https://api.github.com/repos/ztolley/checkfixup/hooks",
+    "issue_events_url": "https://api.github.com/repos/ztolley/checkfixup/issues/events{/number}",
+    "events_url": "https://api.github.com/repos/ztolley/checkfixup/events",
+    "assignees_url": "https://api.github.com/repos/ztolley/checkfixup/assignees{/user}",
+    "branches_url": "https://api.github.com/repos/ztolley/checkfixup/branches{/branch}",
+    "tags_url": "https://api.github.com/repos/ztolley/checkfixup/tags",
+    "blobs_url": "https://api.github.com/repos/ztolley/checkfixup/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/ztolley/checkfixup/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/repos/ztolley/checkfixup/git/refs{/sha}",
+    "trees_url": "https://api.github.com/repos/ztolley/checkfixup/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/repos/ztolley/checkfixup/statuses/{sha}",
+    "languages_url": "https://api.github.com/repos/ztolley/checkfixup/languages",
+    "stargazers_url": "https://api.github.com/repos/ztolley/checkfixup/stargazers",
+    "contributors_url": "https://api.github.com/repos/ztolley/checkfixup/contributors",
+    "subscribers_url": "https://api.github.com/repos/ztolley/checkfixup/subscribers",
+    "subscription_url": "https://api.github.com/repos/ztolley/checkfixup/subscription",
+    "commits_url": "https://api.github.com/repos/ztolley/checkfixup/commits{/sha}",
+    "git_commits_url": "https://api.github.com/repos/ztolley/checkfixup/git/commits{/sha}",
+    "comments_url": "https://api.github.com/repos/ztolley/checkfixup/comments{/number}",
+    "issue_comment_url": "https://api.github.com/repos/ztolley/checkfixup/issues/comments{/number}",
+    "contents_url": "https://api.github.com/repos/ztolley/checkfixup/contents/{+path}",
+    "compare_url": "https://api.github.com/repos/ztolley/checkfixup/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/repos/ztolley/checkfixup/merges",
+    "archive_url": "https://api.github.com/repos/ztolley/checkfixup/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/repos/ztolley/checkfixup/downloads",
+    "issues_url": "https://api.github.com/repos/ztolley/checkfixup/issues{/number}",
+    "pulls_url": "https://api.github.com/repos/ztolley/checkfixup/pulls{/number}",
+    "milestones_url": "https://api.github.com/repos/ztolley/checkfixup/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/ztolley/checkfixup/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/repos/ztolley/checkfixup/labels{/name}",
+    "releases_url": "https://api.github.com/repos/ztolley/checkfixup/releases{/id}",
+    "deployments_url": "https://api.github.com/repos/ztolley/checkfixup/deployments",
+    "created_at": 1512405840,
+    "updated_at": "2017-12-04T16:44:58Z",
+    "pushed_at": 1512509437,
+    "git_url": "git://github.com/ztolley/checkfixup.git",
+    "ssh_url": "git@github.com:ztolley/checkfixup.git",
+    "clone_url": "https://github.com/ztolley/checkfixup.git",
+    "svn_url": "https://github.com/ztolley/checkfixup",
+    "homepage": null,
+    "size": 96,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "language": "JavaScript",
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "forks_count": 0,
+    "mirror_url": null,
+    "archived": false,
+    "open_issues_count": 0,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit"
+    },
+    "forks": 0,
+    "open_issues": 0,
+    "watchers": 0,
+    "default_branch": "master",
+    "stargazers": 0,
+    "master_branch": "master"
+  },
+  "pusher": {
+    "name": "ztolley",
+    "email": "zac@thetolleys.com"
+  },
+  "sender": {
+    "login": "ztolley",
+    "id": 56056,
+    "avatar_url": "https://avatars1.githubusercontent.com/u/56056?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ztolley",
+    "html_url": "https://github.com/ztolley",
+    "followers_url": "https://api.github.com/users/ztolley/followers",
+    "following_url": "https://api.github.com/users/ztolley/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ztolley/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ztolley/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ztolley/subscriptions",
+    "organizations_url": "https://api.github.com/users/ztolley/orgs",
+    "repos_url": "https://api.github.com/users/ztolley/repos",
+    "events_url": "https://api.github.com/users/ztolley/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ztolley/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "extends": ["standard"],
+  "plugins": ["mocha"],
+  "rules": {
+    "mocha/no-exclusive-tests": "error",
+    "no-unused-expressions": 0
+  },
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "globals": {
+    "expect": true,
+    "proxyquire": true,
+    "sinon": true
+  }
+}

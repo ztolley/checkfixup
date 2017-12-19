@@ -1,0 +1,37 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8.5.0
+
+    working_directory: ~/my-app
+
+    steps:
+      - checkout
+
+      - run:
+          name: Server dependencies
+          working_directory: ~/my-app
+          command: npm install
+
+      - run:
+          name: Lint
+          working_directory: ~/my-app
+          command: npm run lint
+
+      - run:
+          name: Test server
+          working_directory: ~/my-app
+          environment:
+            MOCHA_FILE: junit/test-results.xml
+          command: |
+            mkdir junit
+            npm run test:ci
+      - store_test_results:
+          path: junit
+      - store_artifacts:
+          path: junit
+      - store_test_results:
+          path: coverage
+      - store_artifacts:
+          path: coverage

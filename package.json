@@ -1,0 +1,47 @@
+{
+  "name": "checkfixup",
+  "version": "3.0.0",
+  "description": "",
+  "author": "zac@thetolleys.com",
+  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon --inspect src/index.js",
+    "lint": "eslint ./src",
+    "coverage": "nyc --reporter=html --reporter=text --reporter=lcov npm run test:unit",
+    "test:unit": "mocha ./src/**/*.test.js --opts ./test/mocha.opts",
+    "test:watch": "mocha ./src/**/*.test.js --opts ./test/mocha.opts --reporter=min --watch",
+    "test:ci": "nyc --reporter=lcov npm run test:unit -- --reporter mocha-circleci-reporter && codeclimate-test-reporter < coverage/lcov.info"
+  },
+  "engines": {
+    "node": ">=8.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "jsonwebtoken": "^8.1.0",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "codeclimate-test-reporter": "^0.5.0",
+    "eslint": "^4.12.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-mocha": "^4.11.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^4.0.1",
+    "mocha-circleci-reporter": "^0.0.2",
+    "nock": "^9.1.4",
+    "nodemon": "^1.12.1",
+    "nyc": "^11.3.0",
+    "proxyquire": "^1.8.0",
+    "sinon": "^4.1.2",
+    "sinon-chai": "^2.14.0"
+  }
+}
