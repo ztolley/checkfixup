@@ -10,6 +10,7 @@ const { postHook } = require('./controller')
 
 describe('webhook controller', () => {
   beforeEach(async () => {
+    process.env.Key = '"test"'
     this.sandbox = sinon.sandbox.create()
 
     this.reqMock = {
@@ -70,7 +71,8 @@ describe('webhook controller', () => {
           .reply(200, commitsWithoutFixup)
           .post('/repos/ztolley/checkfixup/statuses/fe508425a4fd4327bdaef85846e9a06f22420895?access_token=443322', {
             state: 'success',
-            description: 'No fixups found'
+            description: 'No fixups found',
+            context: 'CheckFixup'
           })
           .reply(200)
 
@@ -97,7 +99,8 @@ describe('webhook controller', () => {
           .reply(200, commitsWithFixup)
           .post('/repos/ztolley/checkfixup/statuses/fe508425a4fd4327bdaef85846e9a06f22420895?access_token=443322', {
             state: 'failure',
-            description: 'Branch contains fixup!'
+            description: 'Branch contains fixup!',
+            context: 'CheckFixup'
           })
           .reply(200)
 
