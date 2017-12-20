@@ -7,7 +7,7 @@ const CONTENT_TYPE = 'application/vnd.github.machine-man-preview+json'
 // to gain access to repo associated with the instance of the app
 async function accessTokenForInstallation (installationId) {
   const APP_ID = process.env.APP_ID
-  const KEY = JSON.parse(process.env.KEY)
+  const KEY = process.env.KEY.replace(/\\n/g, '\n')
   const API_ROOT = process.env.API_ROOT || 'https://api.github.com'
 
   const token = jwt.sign({ iss: APP_ID },
