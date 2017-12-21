@@ -54,3 +54,5 @@ Run npm run 'script name'
 - *test:watch* - Executes the mocha based unit tests and auto re-runs them when changes are made
 - *test:ci* - Used by Circle CI to execute unit tests and test coverage and export them in a format compatible with Circle CI
 - *coverage* - Executes unit tests and reports the number of lines covered by tests, to confirm that application is thoroughly tested
+
+This is a test.
