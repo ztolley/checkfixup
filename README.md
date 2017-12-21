@@ -33,6 +33,8 @@ Checkup is a Node/Express app. No database or external storage is used at this t
 - Node JS >= 8.1
 - NPM
 
+test
+
 ### Installation steps
 - Create a '.env' based on the sample provided
 - Run 'npm install'
