@@ -1,7 +1,7 @@
 {
   "name": "checkfixup",
   "version": "3.0.0",
-  "description": "",
+  "description": "A web service that works with Github to make sure you don't merge pull requests that contain Fixups or WIP commits",
   "author": "zac@thetolleys.com",
   "license": "MIT",
   "main": "src/index.js",
