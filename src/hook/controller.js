@@ -7,6 +7,8 @@ const {
   createCommitStatus
 } = require('../github')
 
+const { log } = require('../logging')
+
 /* POST Github hook
  * Accepts a webhook call from Github details a Git Push.
  * Analyses the push and sets a status to indicate if the
@@ -16,11 +18,10 @@ const {
 */
 async function postHook (req, res, next) {
   try {
-    console.info('webhook called')
-
     const eventType = get(req, 'headers.x-github-event', 'n/a')
+
     if (eventType !== 'push') {
-      console.info('Invalid event, ignoring')
+      log({ text: `Invalid event, ignoring: ${eventType}` })
       return res.status(202).send('Invalid event, ignoring')
     }
 
@@ -31,16 +32,22 @@ async function postHook (req, res, next) {
     const installationId = get(pushData, 'installation.id')
 
     if (!headCommit) {
-      console.info('Ignoring event, no commits to analyse')
+      log({ text: 'Ignoring event, no commits to analyse' })
       return res.status(202).send('Ignoring event, no commits to analyse')
     }
 
     if (branch === defaultBranch) {
-      console.info('Ignoring event, default branch')
+      log({ text: 'Ignoring event, default branch' })
       return res.status(202).send('Ignoring event, default branch')
     }
 
-    console.info('processing')
+    log({ text: 'Processing hook',
+      fields: {
+        'Repository': repoName,
+        'Branch': branch
+      }
+    })
+
     const token = await accessTokenForInstallation(installationId)
     const hasFixup = await branchHasFixup({ token, repoName, branch, defaultBranch })
     const baseStatus = { token, repoName, sha: headCommit }
@@ -48,16 +55,21 @@ async function postHook (req, res, next) {
       ? assign({}, baseStatus, { state: 'failure', description: 'Branch contains fixup!' })
       : assign({}, baseStatus, { state: 'success', description: 'No fixups found' })
 
-    console.info('Setting status: ', status)
+    log({
+      text: status.description,
+      status: status.state,
+      fields: {
+        'Repository': repoName,
+        'Branch': branch
+      }
+    })
 
     await createCommitStatus(status)
   } catch (error) {
-    console.error(error.message)
-    console.log(error)
+    await log({ error })
     return res.status(500).send(error.message)
   }
 
-  console.info('Webhook complete')
   res.status(200).send('Webhook handled successfully')
 }
 

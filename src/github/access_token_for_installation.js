@@ -18,8 +18,6 @@ async function accessTokenForInstallation (installationId) {
 
   const url = `${API_ROOT}/installations/${installationId}/access_tokens`
 
-  console.info('Getting token: ', url)
-
   const { data } = await axios({
     method: 'POST',
     url,
