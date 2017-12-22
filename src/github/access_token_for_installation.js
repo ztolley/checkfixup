@@ -16,9 +16,11 @@ async function accessTokenForInstallation (installationId) {
       expiresIn: '10m'
     })
 
+  const url = `${API_ROOT}/installations/${installationId}/access_tokens`
+
   const { data } = await axios({
     method: 'POST',
-    url: `${API_ROOT}/installations/${installationId}/access_tokens`,
+    url,
     headers: {
       Authorization: 'Bearer ' + token,
       Accept: CONTENT_TYPE
