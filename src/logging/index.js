@@ -1,5 +1,6 @@
 const axios = require('axios')
 const { pick } = require('lodash')
+const uuid = require('uuid')
 
 function transposeFields (fields) {
   const fieldKeys = Object.keys(fields)
@@ -18,7 +19,7 @@ function transposeFields (fields) {
  * @param {*} params
  * @param {string} params.status  SUCCESS, FAILURE, ERROR
  */
-function log ({ text = '', status, fields = {}, slack = true, error }) {
+async function log ({ text = '', status, fields = {}, slack = true, error }) {
   const colours = {
     error: '#D00000',
     falure: '#ff9000',
@@ -49,8 +50,27 @@ function log ({ text = '', status, fields = {}, slack = true, error }) {
   }
 }
 
+async function logEvent (status) {
+  if (!process.env.GA) {
+    return
+  }
+
+  const params = {
+    v: 1,
+    t: 'event',
+    tid: process.env.GA,
+    cid: uuid(),
+    ec: 'checkfixup',
+    ea: 'setStatus',
+    ev: status === 'success' ? 1 : 0
+  }
+
+  axios.get('https://ga-dev-tools.appspot.com/hit-builder/', { params })
+}
+
 module.exports = {
   log,
+  logEvent,
   ERROR: 'error',
   SUCCESS: 'success',
   FAILURE: 'failure'
