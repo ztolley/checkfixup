@@ -35,7 +35,7 @@ function log ({ text = '', status, fields = {}, slack = true, error }) {
   } : {
     attachments: [{
       color: colours['error'],
-      title: `Checkfixup ${process.env.SLACK_ENV}`,
+      title: `Checkfixup ${process.env.SLACK_ENV || ''}`,
       fallback: error.message,
       pretext: error.message,
       text: JSON.stringify(pick(error, ['config', 'stack', 'message']), null, '\t'),
