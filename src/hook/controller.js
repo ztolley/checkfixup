@@ -53,6 +53,7 @@ async function postHook (req, res, next) {
     await createCommitStatus(status)
   } catch (error) {
     console.error(error.message)
+    console.log(error)
     return res.status(500).send(error.message)
   }
 
