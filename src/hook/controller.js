@@ -30,6 +30,11 @@ async function postHook (req, res, next) {
     const headCommit = get(pushData, 'head_commit.id')
     const installationId = get(pushData, 'installation.id')
 
+    if (!headCommit) {
+      console.info('Ignoring event, no commits to analyse')
+      return res.status(202).send('Ignoring event, no commits to analyse')
+    }
+
     if (branch === defaultBranch) {
       console.info('Ignoring event, default branch')
       return res.status(202).send('Ignoring event, default branch')

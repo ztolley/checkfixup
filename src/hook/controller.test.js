@@ -5,6 +5,7 @@ const masterpush = require('../../test/data/pushmaster.json')
 const branchpush = require('../../test/data/pushbranch.json')
 const commitsWithoutFixup = require('../../test/data/commitswithoutfixup.json')
 const commitsWithFixup = require('../../test/data/commitswithfixup.json')
+const commitDeleteBranch = require('../../test/data/commitdeletebranch.json')
 
 const { postHook } = require('./controller')
 
@@ -58,6 +59,18 @@ describe('webhook controller', () => {
       it('should return a message to say it\'s the default branch', () => {
         expect(this.resMock.status).to.be.calledWith(202)
         expect(this.resMock.send).to.be.calledWith('Ignoring event, default branch')
+      })
+    })
+
+    context('when a hook is triggered for a branch delete', () => {
+      beforeEach(async () => {
+        this.reqMock.body = commitDeleteBranch
+        await postHook(this.reqMock, this.resMock)
+      })
+
+      it('should return a message to say it\'s the default branch', () => {
+        expect(this.resMock.status).to.be.calledWith(202)
+        expect(this.resMock.send).to.be.calledWith('Ignoring event, no commits to analyse')
       })
     })
 
