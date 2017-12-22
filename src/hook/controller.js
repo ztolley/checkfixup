@@ -7,7 +7,7 @@ const {
   createCommitStatus
 } = require('../github')
 
-const { log } = require('../logging')
+const { log, logEvent } = require('../logging')
 
 /* POST Github hook
  * Accepts a webhook call from Github details a Git Push.
@@ -55,7 +55,9 @@ async function postHook (req, res, next) {
       ? assign({}, baseStatus, { state: 'failure', description: 'Branch contains fixup!' })
       : assign({}, baseStatus, { state: 'success', description: 'No fixups found' })
 
-    log({
+    await createCommitStatus(status)
+
+    await log({
       text: status.description,
       status: status.state,
       fields: {
@@ -64,7 +66,7 @@ async function postHook (req, res, next) {
       }
     })
 
-    await createCommitStatus(status)
+    await logEvent(status.state)
   } catch (error) {
     await log({ error })
     return res.status(500).send(error.message)
