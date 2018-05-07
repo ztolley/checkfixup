@@ -1,19 +1,17 @@
 describe('log event', () => {
   beforeEach(() => {
-    this.sandbox = sinon.sandbox.create()
-
-    this.axiosGetStub = this.sandbox.stub()
+    this.axiosGetStub = sinon.stub()
 
     this.logEvent = proxyquire(`${__dirname}/log_event`, {
       'axios': {
         get: this.axiosGetStub
       },
-      'uuid': this.sandbox.stub().returns('4444')
+      'uuid': sinon.stub().returns('4444')
     })
   })
 
   afterEach(() => {
-    this.sandbox.restore()
+    sinon.restore()
   })
 
   context('when there is a GA key', () => {

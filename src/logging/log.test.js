@@ -2,8 +2,7 @@ describe('log', () => {
   beforeEach(() => {
     process.env.SLACK_ID = 'slack'
 
-    this.sandbox = sinon.sandbox.create()
-    this.axiosPostStub = this.sandbox.stub()
+    this.axiosPostStub = sinon.stub()
 
     this.log = proxyquire(`${__dirname}/log`, {
       'axios': {
@@ -13,7 +12,7 @@ describe('log', () => {
   })
 
   afterEach(() => {
-    this.sandbox.restore()
+    sinon.restore()
   })
 
   context('when called with a network error object', () => {

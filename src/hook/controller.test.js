@@ -12,7 +12,6 @@ const { postHook } = require('./controller')
 describe('webhook controller', () => {
   beforeEach(async () => {
     process.env.Key = '"test"'
-    this.sandbox = sinon.sandbox.create()
 
     this.reqMock = {
       body: {},
@@ -20,14 +19,14 @@ describe('webhook controller', () => {
     }
 
     this.resMock = {
-      send: this.sandbox.stub(),
-      sendStatus: this.sandbox.stub(),
-      status: this.sandbox.stub().returnsThis()
+      send: sinon.stub(),
+      sendStatus: sinon.stub(),
+      status: sinon.stub().returnsThis()
     }
   })
 
   afterEach(() => {
-    this.sandbox.restore()
+    sinon.restore()
     nock.cleanAll()
   })
 
@@ -47,7 +46,7 @@ describe('webhook controller', () => {
   context('when a webhook is for a push event', () => {
     beforeEach(() => {
       this.reqMock.headers['x-github-event'] = 'push'
-      this.sandbox.stub(jwt, 'sign').returns('1234')
+      sinon.stub(jwt, 'sign').returns('1234')
     })
 
     context('when a hook is triggered for the default branch', () => {
